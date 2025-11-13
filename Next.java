@@ -1,7 +1,37 @@
 "use client"
 
 import { useState, useEffect, useCallback } from "react"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/cpackage com.example.myjavaapp;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.TextView;
+import android.graphics.Color;
+import android.view.Gravity;
+import android.widget.LinearLayout;
+
+public class MainActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        // واجهة بسيطة من كود Java فقط
+        LinearLayout layout = new LinearLayout(this);
+        layout.setOrientation(LinearLayout.VERTICAL);
+        layout.setBackgroundColor(Color.parseColor("#E3F2FD"));
+        layout.setGravity(Gravity.CENTER);
+
+        TextView textView = new TextView(this);
+        textView.setText("مرحبًا بك في تطبيق Java على أندرويد ☕️");
+        textView.setTextSize(24);
+        textView.setTextColor(Color.parseColor("#1565C0"));
+        textView.setGravity(Gravity.CENTER);
+
+        layout.addView(textView);
+        setContentView(layout);
+    }
+}
+omponents/ui/button"
 
 export default function Calculator() {
   const [display, setDisplay] = useState("0")
